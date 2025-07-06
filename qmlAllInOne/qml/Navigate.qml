@@ -14,7 +14,7 @@ Item {
         Text {
             id: navigate_text_title
             text: qsTr("navigate")
-            font.pointSize: GlobalUISettings.btnFontStdSize
+            font.pointSize: GlobalUISettings.btnFontSizeStd
         }
 
         PixLine {

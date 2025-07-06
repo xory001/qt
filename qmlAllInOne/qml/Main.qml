@@ -3,8 +3,8 @@ import QtQuick.Controls
 
 Window {
     id: root
-    width: 640
-    height: 480
+    width: 1100
+    height: 600
     visible: true
     title: qsTr("QML All In One")
 
