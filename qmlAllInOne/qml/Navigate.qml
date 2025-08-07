@@ -51,16 +51,15 @@ Item {
             }
         }
 
-        Rectangle {
+        Button {
             width: parent.btnWidth
             height: parent.btnHeight
-            color: "green"
-            Text {
-                anchors.centerIn: parent
-                text: "2"
-                color: "white"
+            text: qsTr("Shape")
+            onClicked: {
+                root_stackView.push("shape/Shape.qml")
             }
         }
+
         Rectangle {
             width: parent.btnWidth
             height: parent.btnHeight

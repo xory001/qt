@@ -11,7 +11,7 @@ find_package(Qt6 REQUIRED COMPONENTS Multimedia)
 qt_standard_project_setup(REQUIRES 6.8)
 
 qt_add_executable(appqmlAllInOne
-    main.cpp
+    src/main.cpp
 )
 
 target_link_libraries(appqmlAllInOne PRIVATE Qt6::Multimedia)
@@ -32,8 +32,13 @@ qt_add_qml_module(appqmlAllInOne
     QML_FILES qml/baseComponent/PixLine.qml
     QML_FILES ${qml_singletons}
     QML_FILES qml/audioVideo/AVDisplay.qml
+    QML_FILES qml/shape/Shape.qml
+    QML_FILES qml/baseComponent/Header.qml
 
     SOURCES src/audioVideo/cvideoprovider.h src/audioVideo/cvideoprovider.cpp
+    RESOURCES build-with-qt-src.sh
+    RESOURCES qmlAllInOne.desktop
+
 
 
 

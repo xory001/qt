@@ -13,4 +13,7 @@ QtObject {
     property int btnReturnWid: 100
     property int btnReturnHei: 50
     property string btnReturnText: qsTr("Return")
+
+    //header
+    property int headerHeight: 50
 }

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=appqmlAllInOne
+Exec=appqmlAllInOne
+Icon=appqmlAllInOne
+Comment=Qt QML All-In-One Application
+Categories=Utility;Education;
+Terminal=false
