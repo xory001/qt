@@ -36,11 +36,8 @@ qt_add_qml_module(appqmlAllInOne
     QML_FILES qml/baseComponent/Header.qml
 
     SOURCES src/audioVideo/cvideoprovider.h src/audioVideo/cvideoprovider.cpp
-    RESOURCES build-with-qt-src.sh
-    RESOURCES qmlAllInOne.desktop
-
-
-
+    QML_FILES qml/baseComponent/BaseComponentEntry.qml
+    QML_FILES qml/baseComponent/SliderV2.qml
 
 )
 

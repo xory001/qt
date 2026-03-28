@@ -60,14 +60,13 @@ Item {
             }
         }
 
-        Rectangle {
+        Button {
             width: parent.btnWidth
             height: parent.btnHeight
-            color: "blue"
-            Text {
-                anchors.centerIn: parent
-                text: "3"
-                color: "white"
+            text: "Base Component"
+
+            onClicked: {
+                root_stackView.push("baseComponent/BaseComponentEntry.qml")
             }
         }
         Rectangle {
