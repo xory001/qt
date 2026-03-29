@@ -3,6 +3,7 @@ import QtQuick.Particles
 import QtQuick.Shapes
 import "../baseComponent"
 import "../global"
+import qmlAllInOne
 
 Item {
     Header {
@@ -85,6 +86,11 @@ Item {
                         }
                     }
                 }
+            }
+
+            CQuickShape {
+                width: 100
+                height: 100
             }
         }
     }

@@ -14,8 +14,16 @@ qt_add_executable(appqmlAllInOne
     src/main.cpp
 )
 
+target_include_directories(appqmlAllInOne PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/src
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/graphics
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/audioVideo
+)
+
+
 target_link_libraries(appqmlAllInOne PRIVATE Qt6::Multimedia)
 target_link_libraries(appqmlAllInOne PRIVATE Qt6::Quick)
+
 
 set(qml_singletons
     qml/global/GlobalUISettings.qml
@@ -34,10 +42,11 @@ qt_add_qml_module(appqmlAllInOne
     QML_FILES qml/audioVideo/AVDisplay.qml
     QML_FILES qml/shape/Shape.qml
     QML_FILES qml/baseComponent/Header.qml
-
-    SOURCES src/audioVideo/cvideoprovider.h src/audioVideo/cvideoprovider.cpp
     QML_FILES qml/baseComponent/BaseComponentEntry.qml
     QML_FILES qml/baseComponent/SliderV2.qml
+
+    SOURCES src/audioVideo/cvideoprovider.h src/audioVideo/cvideoprovider.cpp
+    SOURCES src/graphics/cquickshape.h src/graphics/cquickshape.cpp
 
 )
 

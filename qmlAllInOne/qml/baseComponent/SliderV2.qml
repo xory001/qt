@@ -14,16 +14,16 @@ Slider {
     property color crDisabled: "#9E9E9E"
     property int handleSize: 16
     property int handleRadius: handleSize / 2
-    property color crhandleNormal: "#E91E63"
-    property color crhandleHovered: "#f00E53"
-    property color crhandlePressed: "#f90000"
-    property color crhandleDisable: crDisabled
+    property color crHandleNormal: "#E91E63"
+    property color crHandleHovered: "#f00E53"
+    property color crHandlePressed: "#f90000"
+    property color crHandleDisable: crDisabled
 
     property int backSize: 6
     property int backRadius: backSize / 2
     property color crBGNornal: "#F8B5CC"
     property color crBGDisabled: crDisabled
-    property color crProgressNormal: crhandleNormal
+    property color crProgressNormal: crHandleNormal
     property color crProgressDisable: crDisabled
 
     background: Rectangle {
@@ -57,6 +57,6 @@ Slider {
         width: root.handleSize
         height: root.handleSize
         radius: root.handleRadius
-        color: root.enabled ? (root.pressed ? root.crhandlePressed : (root.hovered ? root.crhandleHovered : root.crhandleNormal)) : root.crDisabled
+        color: root.enabled ? (root.pressed ? root.crHandlePressed : (root.hovered ? root.crHandleHovered : root.crHandleNormal)) : root.crDisabled
     }
 }
